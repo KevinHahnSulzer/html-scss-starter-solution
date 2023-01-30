@@ -1,0 +1,43 @@
+$messages: (
+  info: (
+    #3a87ad,
+    #fff,
+    #3a87ad,
+  ),
+  warn: (
+    rgb(197, 117, 13),
+    #fff,
+    #c5750d,
+  ),
+  error: (
+    #ce525f,
+    #fff,
+    #ce525f,
+  ),
+);
+
+section[name="boxes-with-mixins"] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.box {
+  padding: 1rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: rgb(235, 235, 235);
+
+  @each $type, $colors in $messages {
+    $color: nth($colors, 1);
+    $background: nth($colors, 2);
+    $border: nth($colors, 3);
+
+    &.#{$type} {
+      color: $color;
+      background: $background;
+      border-color: $border;
+    }
+  }
+}
