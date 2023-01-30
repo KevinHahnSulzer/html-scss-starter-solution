@@ -1,0 +1,9 @@
+{
+  "name": "html_scss_starter",
+  "version": "1.0.0",
+  "description": "A very basic HTML SCSS starter to demonstrate installing and using sass via npm",
+  "main": "index.html",
+  "scripts": {},
+  "author": "Kevin Hahn (Sulzer GmbH)",
+  "license": "ISC"
+}
