@@ -1,9 +1,14 @@
 {
-  "name": "html_scss_starter",
+  "name": "html_scss_starter_solution",
   "version": "1.0.0",
-  "description": "A very basic HTML SCSS starter to demonstrate installing and using sass via npm",
+  "description": "A very basic HTML SCSS starter to demonstrate installing and using sass via npm - solution",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "transpile": "sass --watch scss/theme.scss:css/theme.css"
+  },
   "author": "Kevin Hahn (Sulzer GmbH)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }
