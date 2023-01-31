@@ -16,6 +16,7 @@ $messages: (
   ),
 );
 
+// @extend exercise
 section[name="boxes-with-mixins"] {
   display: flex;
   flex-direction: column;
@@ -40,4 +41,31 @@ section[name="boxes-with-mixins"] {
       border-color: $border;
     }
   }
+}
+
+// @extend exercise
+section[name="boxes-with-extend"] {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+%box-basis {
+  height: 50px;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.dashed-box {
+  @extend %box-basis;
+  border-style: dashed;
+}
+
+.dotted-box {
+  @extend %box-basis;
+  border-width: 2px;
+  border-style: dotted;
 }
