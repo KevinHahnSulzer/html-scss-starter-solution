@@ -17,13 +17,6 @@ $messages: (
 );
 
 // @extend exercise
-section[name="boxes-with-mixins"] {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
-
 .box {
   padding: 1rem;
   border: 1px solid #555;
@@ -44,13 +37,6 @@ section[name="boxes-with-mixins"] {
 }
 
 // @extend exercise
-section[name="boxes-with-extend"] {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
 %box-basis {
   height: 50px;
   width: 50%;
